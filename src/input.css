@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply scroll-smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-fixed{
+    @apply fixed z-[9999] bg-white bg-opacity-80;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-gelap;
+}
+
+/* Mencari Elemen dengan class hamburger-active, elemen span, elemen ke 1 -  garis pertama */
+/* Garis Pertama rotasi sebesar 45 derajat dengan titik rotasi atas kiri
+    Garis Ketiga mengecil 
+    Garis Kedua rotasi sebesar 45 derajat dengan titik rotasi bawah kiri
+*/
+.hamburger-active > span:nth-child(1) {
+    @apply  rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply  -rotate-45;
+}
+
+.project-links {
+    @apply font-semibold text-warnabesar text-xl p-4 mt-5 mb-3 hover:text-warnatransisi active:text-warnaklik;
+}
+
+.project-desc {
+    @apply font-medium text-base text-warnakecil p-4;
+}
+
+.contact-input {
+    @apply w-full bg-warnabackground text-gelap p-3 rounded-md focus:outline-none focus:ring-warnabesar focus:ring-1 focus:border-warnabesar;
+}
+
+.contact-title {
+    @apply text-base text-warnabesar font-bold;
+}

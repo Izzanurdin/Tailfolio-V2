@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/output.css">
+    <title>TailFolio V2</title>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+
+            <!-- NavBar Start -->
+            <div class="flex items-center justify-between relative"> 
+                <!-- Navbar Logo -->
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-warnabesar block py-6"> 
+                        Izzanurdin
+                    </a>
+                </div>
+
+                
+                <div class="flex items-center px-4">
+                    <!-- Hamburger Button Start -->
+                    <button id="hamburger" name="hamburger" type="button" 
+                    class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-500 ease-in-out origin-top-left">
+
+                        </span>
+                        <span class="hamburger-line transition duration-500 ease-in-out">
+
+                        </span>
+                        <span class="hamburger-line transition duration-500 ease-in-out origin-bottom-left">
+
+                        </span>
+                    </button>
+                    <!-- Hamburger Button End -->
+
+                    <!-- NavBar Text Start -->
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-ful right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#" 
+                                class="text-base text-gelap py-2 mx-8 flex group-hover:text-warnabesar transition duration-500">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#aboutme" 
+                                class="text-base text-gelap py-2 mx-8 flex group-hover:text-warnabesar transition duration-500">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio" 
+                                class="text-base text-gelap py-2 mx-8 flex group-hover:text-warnabesar transition duration-500">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" 
+                                class="text-base text-gelap py-2 mx-8 flex group-hover:text-warnabesar transition duration-500">Kontak</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+
+            </div>
+            <!-- NavBar End -->
+        </div>
+    </header>
+    <!-- Header End -->
+
+      <!-- Hero Section Start -->
+      <section id="hero" class="pt-36 ">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <!-- Left Heading Start -->
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <!-- Message -->
+                    <h1 class="text-base text-warnabesar font-semibold md:text-xl lg:text-2xl">
+                        Halo Teman - Teman, saya 
+                    
+                        <!-- Name -->
+                        <span class="block text-4xl text-gelap font-bold mt-1 lg:text-5xl">
+                            Muhammad Izzanurdin Hasan
+                        </span>
+                    </h1>
+                    
+                    <!-- Title -->
+                    <h2 class="font-bold text-lg mb-5 lg:text-2xl">
+                        <span class="text-warnahtml">Newbie Website Developer</span>
+                        <span class="text-warnasiswa"> & Siswa SMKN 1 Denpasar</span>
+                    </h2>
+
+                    <!-- Small Message -->
+                    <p class="text-warnakecil font-semibold mb-10 leading-relaxed">
+                        Saya adalah seorang siswa SMKN 1 Denpasar 
+                        dengan jurusan Rekayasa Perangkat Lunak, dan saya memiliki minat di 
+                        bidang <span class="font-bold">Back-End Development.</span>
+                    </p>
+
+                    <a href="src/doc/CV.pdf" class="font-base font-semibold text-white bg-warnabesar py-3 px-8 rounded-full hover:shadow-lg hover:bg-warnatransisi active:bg-warnaklik ease-in-out transition duration-500">Unduh CV</a>
+                </div>
+                <!-- Left Heading End -->
+
+                <!-- Right Heading Start -->
+                <div class="w-full self-end px-4 lg:w-1/2 ">
+                    <!-- Profile Picture Wrapper Start -->
+                    <div class="mt-10 lg:mt-0 lg:right-0 relative">
+                        <!-- Profile Picture -->
+                        <img src="src/img/profile.png" alt="Profile" class="max-w-full mx-auto rounded-xl">
+
+                        <!-- Profile Picture Background -->
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#4f46e5" d="M35,-42.3C48.4,-30.5,64.3,-22.3,70.7,-9C77.2,4.3,74.2,22.7,64.2,34.2C54.1,45.8,37.1,50.5,20.2,57.7C3.2,64.8,-13.7,74.4,-27.2,71.1C-40.7,67.7,-50.9,51.5,-55.6,35.8C-60.2,20.1,-59.3,4.9,-56.6,-10C-54,-24.9,-49.6,-39.4,-39.9,-51.9C-30.2,-64.4,-15.1,-74.7,-2.1,-72.2C10.8,-69.6,21.6,-54.1,35,-42.3Z" transform="translate(100 100)" />
+                              </svg>
+                        </span>
+
+                    </div>
+                    <!-- Profile Picture Wrapper End -->
+                </div>
+                <!-- Right Heading End -->
+
+            </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- About Section Start -->
+      <section id="aboutme" class="pt-36 pb-32 ">
+        <div class="container">
+            <!-- About Me & Social Media Wrapper  -->
+            <div class="flex flex-wrap">
+                <!-- About Me Start -->
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                            <h4 class="font-bold uppercase text-warnabesar text-lg mb-3">
+                                Tentang Saya
+                            </h4>
+                            <h2 class="font-bold text-gelap text-3xl mb-4 max-w-md">
+                                Berikut adalah beberapa hal yang dapat diketahui mengenai saya
+                            </h2>
+                    <!-- Boxes Wrapper Start -->
+                        <div class=" block grid-cols-2 rounded-lg lg:flex lg:h-auto lg:w-auto gap-10">
+                            <!-- Skills Start -->
+                            <div class="bg-warnabesar text-white p-10 rounded-xl mb-20">
+                                <h1 class="text-2xl font-bold lg:text-4xl">Keterampilan</h1>
+                                <p class="mb-4 font-semibold text-lg">Berikut adalah beberapa keterampilan saya yang berkaitan tentang Coding</p>
+                                <ul class="list-disc font-semibold">
+                                    <li>
+                                        HTML & Vanilla CSS 
+                                    </li>
+                                    <li>
+                                        TailwindCSS
+                                    </li>
+                                    <li>
+                                        PHP & MySQL
+                                    </li>
+                                    <li>
+                                        Microsoft Office (Word, Excel, Powerpoint)
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- SKills End -->
+
+                            <!-- Edcuation History Start -->
+                            <div class="bg-warnabesar text-white p-10 rounded-xl mb-20">
+                                <h1 class="text-2xl font-bold lg:text-4x">Riwayat Pendidikan</h1>
+                                <p class="mb-4 font-semibold text-lg">Berikut adalah riwayat pendidikan saya</p>
+                                <ul class="list-disc font-semibold">
+                                    <li>
+                                        SMPN 1 Rogojampi (2019-2021)
+                                    </li>
+                                    <li>
+                                        SMP PGRI 8 Denpasar (2021-2022)
+                                    </li>
+                                    <li>
+                                        SMKN 1 Denpasar (2022-Now)
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Education History End -->
+                        </div>
+                    <!-- Boxes Wrapper End -->
+                </div>
+                <!-- About Me End -->
+
+                <!-- Social Media Start -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-gelap text-2xl mb-4 lg:text-4xl">
+                        Mari Berteman
+                    </h3>
+                    <p class="font-medium text-base text-warnakecil mb-6 lg:text-xl">Berteman dengan saya melalui beberapa Media Sosial yang tercantum di bawah ini!</p>
+
+                    <!-- Social Media Logo Wrapper -->
+                    <div class="flex items-center">
+                        <!-- Logo Instagram -->
+                        <a href="https://www.instagram.com/dalgonndoll_?igsh=MWFneTFjY2U2cG8wbg==" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 
+                            2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 
+                            1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 
+                            11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 
+                            2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 
+                            1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 
+                            6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+
+                        <!-- Logo WhatsApp -->
+                        <a href="https://wa.me/+6281217488955" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title>
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 
+                                0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 
+                                0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 
+                                4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </a>
+
+                        <!-- Logo Discord -->
+                        <a href="https://discordapp.com/users/1096821845111603211" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title>
+                                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 
+                                9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 
+                                0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 
+                                0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 
+                                0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                        </a>
+
+                        <!-- Logo GMail -->
+                        <a href="https://mailto:muh.izza.hasan@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title>
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 
+                                1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+
+                        <!-- Logo GitHub -->
+                        <a href="https://github.com/Izzanurdin" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 
+                                1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 
+                                1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 
+                                22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    <!-- Social Media Logo Wrapper End -->
+                </div>
+                <!-- Social Media Wrapper End -->
+            </div>
+            <!-- About Me & Social Media Wrapper End -->
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Project Section Start -->
+      <section id="portofolio" class="pt-36 pb-16 bg-warnabackground">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-width-xl mx-autoo text-center mb-16">
+                    <h4 class="font-semibold text-lg text-warnabesar mb-2">Portofolio</h4>
+                    <h2 class="font-bold text-gelap text-3xl mb-4">Projek Terbaru Saya</h2>
+                    <p class="font-medium text-md text-warnakecil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic placeat, quasi facilis est repellendus omnis laborum vero dolore consequatur.</p>
+                </div>
+            </div>
+
+            <!-- Project Picture, Title, Descryption Start -->
+            <div class="w-full px-4 flex flex-wrap justify-center">
+                <!-- Project 1 : Project Billiard -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/projectimage/billiardhomepage.jpg" alt="" width="100%">
+                        <a href="src/projects/Project Billiard/index.html" target="_blank" class="project-links">Project Billiard</a>
+                        <p class="project-desc">Ini adalah projek Website Statis pertama saya, yaitu Project Billiard. Saya mengambil tema website ini berdasarkan hobi saya, yaitu bermain Billiard.</p>
+                    </div>
+                </div>
+                <!-- Project 2 : Ma Maison, Est Paris -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/projectimage/parishomepage.jpg" alt="" width="100%">
+                        <a href="src/projects/Personal Website/index.html" class="project-links">Ma Maison, est Paris</a>
+                        <p class="project-desc">Ini adalah projek Website Statis kedua saya, yaitu Ma Maison, Est Paris. Saya mengambil tema website ini berdasarkan negara kesukaan saya, yaitu Prancis.</p>
+                    </div>
+                </div>
+                <!-- Project Picture, Title, Descryption End -->
+
+
+            </div>
+        </div>
+      </section>
+      <!-- Project Section End -->
+
+      <!-- Contact Section Start -->
+      <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-warnabesar mb-2">
+                        Kontak
+                    </h4>
+                    <h2 class="font-bold text-gelap text-3xl mb-4 sm:text-4xl lg:text-lg">
+                        Hubungi Saya
+                    </h2>
+                    <p class="font-medium text-md text-warnakecil">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ad harum perspiciatis sunt! 
+                        Laborum voluptatem sunt voluptas veritatis accusamus quisquam.
+                    </p>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="w-full lg:w-2/3 lg:mx-auto ">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="contact-title">Nama</label>
+                        <input type="text" id="name" class="contact-input">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="contact-title">Email</label>
+                        <input type="text" id="email" class="contact-input">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="contact-title">Pesan</label>
+                        <textarea type="textarea" id="message" class="contact-input"> </textarea>
+                    </div>
+
+                    <div class="w-full px-4">
+                        <button class="text-base font-semibold bg-warnabesar py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+
+      <!-- Footer Start -->
+      <footer class="bg-gelap pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3 ">
+                    <h2 class="font-bold text-4xl text-white mb-5">Izzanurdin</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
+                    <p>muh.izza.hasan@gmail.com</p>
+                    <p>Jln. Tukad Buana III No.51, Br. Batukandik</p>
+                    <p>Denpasar</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Referensi</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="https://www.youtube.com/@sandhikagalihWPU" class="inline-block text-base hover:text-warnabesar mb-3 transition duration-500 ease-in-out">Web Programming UNPAS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-warnabesar mb-3 transition duration-500 ease-in-out">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#aboutme" class="inline-block text-base hover:text-warnabesar mb-3 transition duration-500 ease-in-out">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#portofolio" class="inline-block text-base hover:text-warnabesar mb-3 transition duration-500 ease-in-out">Projek</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-warnabesar mb-3 transition duration-500 ease-in-out">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700 text-white">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- Logo Instagram -->
+                    <a href="https://www.instagram.com/dalgonndoll_?igsh=MWFneTFjY2U2cG8wbg==" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Instagram</title>
+                        <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 
+                        2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 
+                        1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 
+                        11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 
+                        2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 
+                        1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 
+                        6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </a>
+
+                    <!-- Logo WhatsApp -->
+                    <a href="https://wa.me/+6281217488955" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title>
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 
+                            0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 
+                            0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 
+                            4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+
+                    <!-- Logo Discord -->
+                    <a href="https://discordapp.com/users/1096821845111603211" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title>
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 
+                            9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 
+                            0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 
+                            0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 
+                            0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    </a>
+
+                    <!-- Logo GMail -->
+                    <a href="https://mailto:muh.izza.hasan@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title>
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 
+                            1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </a>
+
+                    <!-- Logo GitHub -->
+                    <a href="https://github.com/Izzanurdin" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-warnakecil hover:border-warnatransisi hover:bg-warnatransisi hover:text-white transition duration-500 ease-in-out ">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title>
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 
+                            1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 
+                            1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 
+                            22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+                <p class="font-medium text-sm text-slate-500 text-center">Dibuat oleh <a href="https://www.instagram.com/dalgonndoll_?igsh=MWFneTFjY2U2cG8wbg==" target="_blank" class="text-warnabesar font-bold">Muhammad Izzanurdin</a>, menggunakan <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a></p>
+            </div>
+
+        </div>
+      </footer>
+      <!-- Footer End -->
+      <script src="public/js/script.js"></script>
+</body>
+</html>
